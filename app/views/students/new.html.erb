@@ -1,0 +1,44 @@
+<div class="container">
+  <h1 class="text-center">Thêm</h1>
+
+  <%= form_with model:@student_264 do |s_264| %>
+    <div>Nhập họ mã học sinh:</div>
+    <%= s_264.text_field :mahs, placeholder:"" %>
+    <br>
+    <div>Nhập họ tên:</div>
+    <%= s_264.text_field :ten , placeholder:"" %>
+    <br>
+    <div>Nhập lớp:</div>
+    <%= s_264.text_field :lop , placeholder:"" %>
+    <br>
+    <div>Nhập mã sách:</div>
+    <%= s_264.text_field :masach , placeholder:"" %>
+    <br>
+    <div>Nhập mã tên sách:</div>
+    <%= s_264.text_field :tensach , placeholder:"" %>
+    <br>
+    <div>Nhập mã tên tác giả:</div>
+    <%= s_264.text_field :tacgia , placeholder:"" %>
+    <br>
+    <div>Nhập mã tên tủ sách:</div>
+    <%= s_264.text_field :tusach , placeholder:"" %>
+    <br>
+    <div>Nhập số BM:</div>
+    <%= s_264.text_field :sobm  , placeholder:"" %>
+    <br>
+    <div>Nhập ngày mượn:</div>
+    <%= s_264.text_field :ngaymuon  , placeholder:"" %>
+    <br>
+    <div>Nhập ngày trả:</div>
+    <%= s_264.text_field :ngaytra   , placeholder:"" %>
+    <br>
+    <div>Nhập số ngày:</div>
+    <%= s_264.text_field :songay   , placeholder:"" %>
+    <br>
+    <br>
+    <br>
+    <div>
+      <%= s_264.submit class:"btn btn-primary"%>
+    </div>
+  <% end %>
+</div>

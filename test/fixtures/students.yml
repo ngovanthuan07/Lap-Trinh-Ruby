@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mahs: MyString
+  ten: MyString
+  lop: MyString
+  masach: MyString
+  tensach: MyString
+  tacgia: MyString
+  tusach: MyString
+  sobm: MyString
+  ngaymuon: MyString
+  ngaytra: MyString
+  songay: MyString
+
+two:
+  mahs: MyString
+  ten: MyString
+  lop: MyString
+  masach: MyString
+  tensach: MyString
+  tacgia: MyString
+  tusach: MyString
+  sobm: MyString
+  ngaymuon: MyString
+  ngaytra: MyString
+  songay: MyString

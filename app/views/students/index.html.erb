@@ -1,0 +1,41 @@
+<%= link_to 'Thêm',new_students_path , class:"btn btn-success" %>
+
+<table class="table table-striped table-bordered table-hover">
+    <thead class="thead-dark">
+    <tr>
+      <th>STT</th>
+      <th>MHS</th>
+      <th>Họ và tên</th>
+      <th>Lớp</th>
+      <th>Mã sách</th>
+      <th>Tên sách</th>
+      <th>Tên tác giả</th>
+      <th>Tủ sách</th>
+      <th>Số BM</th>
+      <th>Ngày mượn</th>
+      <th>Ngày trả</th>
+      <th>Số ngày</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @student_264.each do |student_264| %>
+        <tr>
+          <td><%= student_264.id %></td>
+          <td><%= student_264.mahs %></td>
+          <td><%= student_264.ten %></td>
+          <td><%= student_264.lop %></td>
+          <td><%= student_264.masach %></td>
+          <td><%= student_264.tensach %></td>
+          <td><%= student_264.tacgia %></td>
+          <td><%= student_264.tusach %></td>
+          <td><%= student_264.sobm %></td>
+          <td><%= student_264.ngaymuon %></td>
+          <td><%= student_264.ngaytra %></td>
+          <td><%= student_264.songay %></td>
+          <td><%= link_to 'Sửa',edit_students_path(student_264), method: 'get', class:"btn btn-info" %></td>
+          <td><%= link_to 'Xoá', students_path(student_264), method: 'delete', class:"btn btn-danger" %></td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
